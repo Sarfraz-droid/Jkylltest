@@ -43,8 +43,6 @@ const parseFolders = (folderPath) => {
     }
   });
 
-  console.log(folderpaths);
-
   return folderpaths;
 };
 
@@ -60,10 +58,12 @@ fs.readdirSync(dirname(""), { withFileTypes: true }).forEach((file) => {
       name: file.name,
       chilren: parseFolders(`${file.name}`),
     });
-  } else if (file.isFile() && file.name.indexOf(".md") > -1) {
+  } else if (file.name.indexOf(".md") > -1) {
     folderpaths.items.push(parseMarkdown(`${file.name}`));
   }
 });
+
+console.log(folderpaths);
 
 fs.writeFile("./index.json", JSON.stringify(folderpaths), (err) => {
   if (err) throw err;
