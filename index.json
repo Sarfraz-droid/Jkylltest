@@ -1,1 +1,21 @@
-{"items":[{"title":"Hello","path":"index.md"}],"prefixes":[{"path":"/blogs","name":"blogs","chilren":{"items":[{"title":"Sample Blog","path":"blogs/Blog.md"}],"prefixes":[]}}]}
+{
+    "items": [
+        {
+            "title": "Hello",
+            "path": "index.md"
+        }
+    ],
+    "prefixes": [
+        {
+            "path": "/blogs",
+            "name": "blogs",
+            "items": [
+                {
+                    "title": "Sample Blog",
+                    "path": "blogs/Blog.md"
+                }
+            ],
+            "prefixes": []
+        }
+    ]
+}

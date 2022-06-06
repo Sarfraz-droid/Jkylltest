@@ -56,7 +56,7 @@ fs.readdirSync(dirname(""), { withFileTypes: true }).forEach((file) => {
     folderpaths.prefixes.push({
       path: `/${file.name}`,
       name: file.name,
-      chilren: parseFolders(`${file.name}`),
+      ...parseFolders(`${file.name}`),
     });
   } else if (file.name.indexOf(".md") > -1) {
     folderpaths.items.push(parseMarkdown(`${file.name}`));
