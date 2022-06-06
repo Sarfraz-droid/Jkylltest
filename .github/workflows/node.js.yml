@@ -34,4 +34,4 @@ jobs:
           ls
           git add .
           git commit --allow-empty -m "generated"
-          git push origin gh-pages --force  --allow-empty
+          git push origin gh-pages --force
