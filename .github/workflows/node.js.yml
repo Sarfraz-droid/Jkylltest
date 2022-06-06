@@ -33,5 +33,5 @@ jobs:
           git checkout -b gh-pages
           ls
           git add .
-          git commit -m "generated"
+          git commit --allow-empty -m "generated"
           git push origin gh-pages --force  --allow-empty
