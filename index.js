@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path,{dirname} from 'path'
 
-const unusedFolders = [".git", "node_modules", "public", "src", "test"]
+const unusedFolders = [".git",".github", "node_modules", "public", "src", "test"]
 
 const parseMarkdown = (filePath) => { 
     const file = fs.readFileSync(filePath, 'utf8')
