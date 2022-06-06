@@ -1,0 +1,31 @@
+{
+    "items": [],
+    "prefixes": [
+        {
+            "path": "/.github",
+            "name": ".github",
+            "chilren": {
+                "items": [],
+                "prefixes": [
+                    {
+                        "items": [],
+                        "prefixes": []
+                    }
+                ]
+            }
+        },
+        {
+            "path": "/blogs",
+            "name": "blogs",
+            "chilren": {
+                "items": [
+                    {
+                        "title": "Sample Blog",
+                        "path": "blogs/Blog.md"
+                    }
+                ],
+                "prefixes": []
+            }
+        }
+    ]
+}
