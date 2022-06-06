@@ -47,6 +47,8 @@ const parseFolders = (folderPath) => {
 };
 
 const folderpaths = {
+  path: "",
+  name: "Resources",
   items: [],
   prefixes: [],
 };
