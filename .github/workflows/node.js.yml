@@ -28,3 +28,12 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm start
+    - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git remote add origin https://github.com/Sarfraz-droid/Markdown-API.git
+          git checkout -b gh-pages
+          git pull origin main
+          git add .
+          git commit -m "generated"
+          git push origin gh-pages
