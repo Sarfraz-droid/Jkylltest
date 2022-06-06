@@ -35,4 +35,4 @@ jobs:
           git pull origin main
           git add .
           git commit -m "generated"
-          git push origin gh-pages
+          git push origin gh-pages --force
