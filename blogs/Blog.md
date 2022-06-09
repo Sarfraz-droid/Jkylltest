@@ -1,3 +1,9 @@
+---
+title: Free Resources
+Date: 2020-05-06
+By: Sarfraz Alam
+---
+
 # Sample Blog
 
 Est fugiat sint exercitation non. Adipisicing cupidatat sint est exercitation culpa qui sunt ea excepteur non commodo duis quis dolore. Aliqua eiusmod veniam laborum dolore fugiat mollit et minim occaecat quis esse consequat cupidatat.

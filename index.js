@@ -10,14 +10,38 @@ const unusedFolders = [
   "test",
 ];
 
+const extractData = (lines) => {
+  const obj = {};
+  let found = 0;
+  lines.forEach((line) => {
+    if (line.indexOf("---") > -1) {
+      found++;
+    }
+
+    if (found === 2) {
+      return obj;
+    }
+
+    if (found > 0) {
+      if (line.indexOf(":") > -1) {
+        const [key, value] = line.split(":");
+        obj[key?.trim()] = value?.trim();
+      }
+    }
+  });
+
+  return obj;
+};
+
 const parseMarkdown = (filePath) => {
   const file = fs.readFileSync(filePath, "utf8");
   const lines = file.split("\n");
   const title = lines[0].replace("#", "").trim();
+  const obj = extractData(lines);
   const link = filePath;
-
+  console.log(obj);
   return {
-    title,
+    ...obj,
     path: link,
   };
 };
