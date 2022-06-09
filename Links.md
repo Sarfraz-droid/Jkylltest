@@ -1,7 +1,7 @@
 ---
 title: Free Resources
-Date: 2020-05-06
-By: Sarfraz Alam
+date: 2020-05-06
+by: Sarfraz Alam
 ---
 
 ## Resources
